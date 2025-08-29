@@ -19,12 +19,24 @@
         Every cup is made with love to make you feel at home.
       </p>
       <div class="quick-actions">
-        <a href="https://wa.me/96171418947" target="_blank" class="btn whatsapp" aria-label="Chat on WhatsApp">WhatsApp 71418947</a>
-        <a href="https://www.instagram.com/latte_coffe_shop?igsh=MWNyeXhvc3hyYTZ0eA%3D%3D&utm_source=qr" target="_blank" class="btn instagram" aria-label="Open Instagram">Instagram</a>
-        <a href="#location" class="btn location" aria-label="Scroll to location">Location</a>
+        <a href="https://wa.me/96171418947" target="_blank" class="btn whatsapp">WhatsApp 71418947</a>
+        <a href="https://www.instagram.com/latte_coffe_shop?igsh=MWNyeXhvc3hyYTZ0eA%3D%3D&utm_source=qr" target="_blank" class="btn instagram">Instagram</a>
+        <a href="#location" class="btn location">Location</a>
       </div>
     </div>
   </header>
+
+  <!-- CATEGORY BAR -->
+  <nav class="category-bar">
+    <button data-cat="Hot">Hot</button>
+    <button data-cat="Iced">Cold</button>
+    <button data-cat="Milkshake">Milkshake</button>
+    <button data-cat="Boba">Boba</button>
+    <button data-cat="Refreshers">Refresher</button>
+    <button data-cat="Frappe">Frappe</button>
+    <button data-cat="Sugar Free">Sugar Free</button>
+    <button data-cat="Shisha">Shisha</button>
+  </nav>
 
   <!-- MENU -->
   <main>
@@ -52,11 +64,11 @@
           loading="lazy"
           allowfullscreen
           referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=Kafar%20Roumane%20main%20road%20near%20Ventus%20Pizza&output=embed">
+          src="https://maps.app.goo.gl/KT77yjngPeJCQvm7A?g_st=ipc">
         </iframe>
       </div>
       <div class="quick-actions center">
-        <a href="https://maps.google.com?q=Kafar%20Roumane%20main%20road%20near%20Ventus%20Pizza" target="_blank" class="btn location">Open in Maps</a>
+        <a href="https://maps.app.goo.gl/KT77yjngPeJCQvm7A?g_st=ipc" target="_blank" class="btn location">Open in Maps</a>
       </div>
     </section>
   </main>
@@ -64,7 +76,7 @@
   <!-- SETTINGS BUTTON -->
   <button id="settings-btn" class="fab" title="Open settings">⚙️</button>
 
-  <!-- SETTINGS PANEL / ADMIN (same design, scroll fixed) -->
+  <!-- SETTINGS PANEL / ADMIN -->
   <div id="settings-panel" class="modal hidden" aria-hidden="true">
     <div class="modal-card">
       <button class="close" id="close-settings" aria-label="Close">×</button>
@@ -101,6 +113,10 @@
             <input id="new-item-price" type="number" step="0.5" placeholder="Price"/>
             <input id="new-item-image" type="file" accept="image/*"/>
             <button id="add-item" class="btn">Add Item</button>
+          </div>
+          <!-- GLOBAL SAVE BUTTON -->
+          <div class="save-all">
+            <button id="save-all" class="btn primary">Save All Changes</button>
           </div>
         </div>
 
